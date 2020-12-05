@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign in | Online Mobile Shopee</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="login-header header" id="header">
+        <nav class="header-nav">
+            <div class="header-nav-heading">
+                <h1>Online Mobile Shopee</h1>
+            </div>
+            <div class="header-nav-menu">
+                <ul>
+                   <li><a href="index.html">home</a></li> 
+                   <li><a href="mobiles.html">mobiles </a></li> 
+                   <li class="current"><a href="login.html">login</a></li> 
+                   <li><a href="about.html">about us</a></li> 
+                   <li class="current"><a href="cart.html"><img src="images/cart.png" class="cart-icon" width="30px" height="30px"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="login-section section" id="signup">
+            <form action="#" id="signup-form" class="login-form signup-form" >
+                <div class="form-container signup">
+                    <h1>Sign in</h1> 
+                    <div class="form-control"><!--class success error-->
+                        <label for="name">Name</label>
+                        <small id="small">Name already exists!</small>
+                        <input type="text" name="name" id="name" placeholder="Abhijit Unavane">
+                    </div>
+                    <div class="form-control"><!--class success error-->
+                        <label for="username">Username</label>
+                        <small id="small">Username already exists!</small>
+                        <input type="text" name="username" id="username" placeholder="Abhi2000">
+                    </div>
+                    <div class="form-control"><!--class success error-->
+                        <label for="email">Email</label>
+                        <small id="small">Enter valid email</small>
+                        <input type="email" name="email" id="email" placeholder="abhi@xyz.com">
+                    </div>
+                    <div class="form-control"> <!--class success error-->
+                        <label for="password">Password</label>
+                        <small>Password should be of length 10 characters!</small>  
+                        <input type="password" name="password" id="password" placeholder="should not be 1234...">
+                    </div>
+                    <div class="form-control"> <!--class success error-->
+                        <label for="password2">Password Check</label>
+                        <small>Enter correct password!</small>  
+                        <input type="password" name="password2" id="password2" placeholder="should be same as entered above...">
+                    </div>
+                    <div>
+                        <button id="signup">Sign up</button>
+                    </div>
+                    <div>
+                        <label for="signup-link">Already have an account?</label>
+                        <a id="signup-link" href="login.html">Login</a>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </header>
+    <footer class="footer">
+        <!-- <button class="footer-backtotop-button" onclick="gototop()"><h2>back to top</h2></button>    -->
+        <div class="footer-totalinfo">
+            <div class="footer-logo1">
+                <img src="images/pccoe-logo1.jpg">
+            </div>
+            <div class="footer-info">
+                <h2>Copyrighted @2020 by PCCoE Students</h2>
+            </div>
+            <div class="footer-logo2">
+                <img src="images/pccoe-logo2.jpg">
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

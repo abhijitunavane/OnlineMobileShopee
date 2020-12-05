@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your cart | Online Mobile Shopee</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="login-header header" id="header">
+        <nav class="header-nav">
+            <div class="header-nav-heading">
+                <h1>Online Mobile Shopee</h1>
+            </div>
+            <div class="header-nav-menu">
+                <ul>
+                   <li><a href="index.html">home</a></li> 
+                   <li><a href="mobiles.html">mobiles </a></li> 
+                   <li><a href="login.html">login</a></li> 
+                   <li><a href="about.html">about us</a></li> 
+                   <li class="current"><a href="cart.html"><img src="images/cart.png" class="cart-icon" width="30px" height="30px"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="cart-section section" id="cart">
+            <div class="ifNotLoggedIn" id="ifNotLoggedIn">
+                <div class="NotLoggedInmessage">  
+                    <div>
+                        <h1>You haven't Logged in!</h1>
+                    </div>
+                    <div>
+                        <h3>Log in first then you'll se your cart</h3>
+                    </div>
+                </div>
+                <div class="logInBtn">
+                    <a href="login.html">Log in!</a>
+                </div>
+            </div>
+            <div class="cart-container" id="cart-container">
+                <div class="cart-container-item1">
+                    <div class="cart-item-container" id="cart-item-container">
+                        <div class="cart-item1">
+                            <div class="cart-item1-img">
+                                <img src="images/mobiles/samsung/m21.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="cart-item2">
+                            <div class="priceInfo" style="padding: 0;" id="priceInfo">
+                                <h1 style="padding: 0;">Samsung Galaxy M21 (Raven Black, 4GB RAM, 64GB Storage)</h1><br>
+                                <small>M.R.P. <strike>₹ 14,999.00 </strike></small>
+                                <h2 style="font-weight: 300;">Deal Price:<br><price style="color:#bf1313;" id="price-update">₹ 13,999.00</price></h2>
+                                <small>You Save: <price style="color:#bf1313;">₹ 1,000.00</price></small><br><br>
+                            </div>
+                        </div>
+                        <div class="cart-item3">
+                            <h1>
+                                Delivery in 4-6 days | free
+                            </h1>
+                            <div class="cart-item3-label"><label for="address"><h3>Your Address :</h3></label></div>
+                            <div class="textarea-address">
+                                <textarea  name="address" id="address" cols="25" rows="5" placeholder="Enter Address here..." required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quantity-items" id="quantity-items">
+                        <div class="quantity-items-container">    
+                            <div class="quantity-container">
+                                <div class="quantity-minus" onclick="minusQty()">-</div>
+                                <div><input id="quantity" type="number" max="4" min="1" value="1"></div>
+                                <div class="quantity-plus" onclick="plusQty()">+</div> 
+                            </div>
+                            <div class="remove">
+                                <div class="remove-btn">
+                                    <input type="button" id="remove" value="Remove">
+                                </div>
+                            </div>
+                            <div class="place-order">
+                                <div class="place-order-btn">
+                                    <input type="button" id="placeOrder" value="Place Order">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-container-item2" id="cart-container-item2">
+                    <div class="price-details">
+                        <div class="price-details-item">
+                            <div class="price-details-heading">
+                                <h1>Price Details</h1>
+                            </div>
+                        </div>
+                        <div class="price-details-item">
+                            <div class="price-container">
+                                <div class="price-item">
+                                    <h3>Price (1 item)</h3>
+                                </div>
+                                <div class="price-item">
+                                    <h3 id="price-item-update">₹ 14,999</h3>
+                                </div>
+                            </div>
+                            <div class="noOfItems-container">
+                                <div class="noOfItems-item">
+                                    <h3>Quantity</h3>
+                                </div>
+                                <div class="noOfItems-item">
+                                    <h3 id='noOfItems-item-update'>1</h3>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="price-details-item">
+                            <div class="totalPrice">
+                                <div class="total-amount-heading">
+                                    <h1>Total Amount</h1>
+                                </div>
+                                <div class="total-amount">
+                                    <h3 id="toal-price-item-update">₹ 13,999.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <footer class="footer">
+        <!-- <button class="footer-backtotop-button" onclick="gototop()"><h2>back to top</h2></button>    -->
+        <div class="footer-totalinfo">
+            <div class="footer-logo1">
+                <img src="images/pccoe-logo1.jpg">
+            </div>
+            <div class="footer-info">
+                <h2>Copyrighted @2020 by PCCoE Students</h2>
+            </div>
+            <div class="footer-logo2">
+                <img src="images/pccoe-logo2.jpg">
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
