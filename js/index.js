@@ -269,4 +269,3 @@ function setSuccessFor(input) {
 	//add success class to formControl
 	formControl.className = 'form-control success';
 }
-
